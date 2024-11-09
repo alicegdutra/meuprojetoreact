@@ -1,5 +1,5 @@
 import React from 'react';
-import './Lista.css';
+import '../Atv03.css';
 
 function Lista({ items }) {
   return (

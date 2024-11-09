@@ -1,5 +1,5 @@
 import React from 'react';
-import './DoubleValue.css';
+import '../Atv03.css';
 
 function DoubleValue({ value }) {
   return (

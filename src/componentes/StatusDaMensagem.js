@@ -1,5 +1,5 @@
 import React from 'react';
-import './StatusMessage.css';
+import '../Atv03.css';
 
 function StatusMessage({ isOnline }) {
   return (

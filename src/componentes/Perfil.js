@@ -1,5 +1,5 @@
 import React from 'react';
-import './Perfil.css';
+import '../Atv03.css';
 
 function Perfil({ name, imageUrl }) {
   return (

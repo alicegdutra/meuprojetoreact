@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Perfil from './componentes/Perfil';
 import Galeria from './componentes/Galeria';
-import StatusMessage from './componentes/StatusMessage';
-import Lista from './componentes/Lista';
-import DoubleValue from './componentes/DoubleValue';
-import './App.css';
+import StatusMessage from './componentes/StatusDaMensagem';
+import Lista from './componentes/List';
+import DoubleValue from './componentes/Dobro';
+import './Atv03.css';
 
 function Atv03() {
   return (
     <div className="container">
       <h2>Atividade 03</h2>
-      <Perfil name="Alice" imageUrl="https://via.placeholder.com/100" />
+      <Perfil name="Marcos" imageUrl="https://cdn3d.iconscout.com/3d/premium/thumb/avatar-homem-afro-latino-10971671-8779383.png?f=webp" />
       <Galeria />
       <StatusMessage isOnline={true} />
-      <Lista items={['Item 1', 'Item 2', 'Item 3']} />
+      <Lista items={['Componente lista', 'Professora: Carol', 'Fatec Prudente']} />
       <DoubleValue value={5} />
       <Link to="/">Voltar</Link>
     </div>
