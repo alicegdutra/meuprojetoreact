@@ -8,11 +8,11 @@ function List2() {
   };
 
   return (
-    <div className="list2">
+    <div className="list2-container">
       <h3>Escultores Inspiradores:</h3>
       <ul>
         {itens.map((item, indice) => (
-          <li key={indice}>
+          <li key={indice} className="escultor-item">
             {item} <button onClick={() => removerItem(indice)}>Remover</button>
           </li>
         ))}

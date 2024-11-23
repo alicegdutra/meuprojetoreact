@@ -5,23 +5,29 @@ function List3() {
   const [entrada, setEntrada] = useState('');
 
   const adicionarItem = () => {
-    setItens([...itens, entrada]);
-    setEntrada('');
+    if (entrada.trim() !== '') {
+      setItens([...itens, entrada.trim()]);
+      setEntrada('');
+    }
   };
 
   return (
-    <div className="list3">
+    <div className="list3-container">
       <h3>Adicione Escultores Inspiradores:</h3>
-      <input
-        type="text"
-        value={entrada}
-        onChange={(e) => setEntrada(e.target.value)}
-        placeholder="Digite um nome"
-      />
-      <button onClick={adicionarItem}>Adicionar</button>
+      <div className="input-container">
+        <input
+          type="text"
+          value={entrada}
+          onChange={(e) => setEntrada(e.target.value)}
+          placeholder="Digite um nome"
+        />
+        <button onClick={adicionarItem}>Adicionar</button>
+      </div>
       <ul>
         {itens.map((item, indice) => (
-          <li key={indice}>{item}</li>
+          <li key={indice} className="escultor-item">
+            {item}
+          </li>
         ))}
       </ul>
     </div>

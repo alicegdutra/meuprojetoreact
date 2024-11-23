@@ -1,12 +1,14 @@
 import React from 'react';
 
-function Toolbar({ onPlayMovie, onUploadImage }) {
+function BarraDeFerramentas({ aoReproduzirFilme, aoEnviarImagem }) {
   return (
-    <div className="toolbar">
-      <button onClick={onPlayMovie}>Reproduzir Filme</button>
-      <button onClick={onUploadImage}>Enviar Imagem</button>
+    <div className="barra-de-ferramentas">
+      <h2>Atividades da Barra de Ferramentas</h2>
+      <button onClick={aoReproduzirFilme}>Reproduzir Filme</button>
+      <button onClick={aoEnviarImagem}>Enviar Imagem</button>
     </div>
   );
 }
 
-export default Toolbar;
+export default BarraDeFerramentas;
+

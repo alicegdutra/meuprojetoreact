@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function List4() {
-  const [itens, setItens] = useState(['Grandes Sinos', 'Paisagem Lunar', 'Exército de Terracota']);
+  const [itens, setItens] = useState(['Comprar maças', 'Comprar uvas', 'Comprar suco de acerola']);
 
   const inverterLista = () => {
     setItens([...itens].reverse());
@@ -9,7 +9,7 @@ function List4() {
 
   return (
     <div className="list4">
-      <h3>Lista de Arte</h3>
+      <h3>Lista de Compras</h3>
       <button onClick={inverterLista}>Inverter Lista</button>
       <ul>
         {itens.map((item, indice) => (

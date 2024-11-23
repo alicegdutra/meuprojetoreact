@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Toolbar from './componentes2/Toolbar';
+import BarraDeFerramentas from './componentes2/Toolbar';
 import Gallery from './componentes2/Gallery';
 import Counter from './componentes2/Counter';
 import Form from './componentes2/Form';
@@ -12,15 +12,16 @@ import CounterList from './componentes2/CounterList';
 import List3 from './componentes2/List3';
 import List4 from './componentes2/List4';
 import BucketList from './componentes2/BucketList';
+import MovingDot from './componentes2/MovingDot';
 import './Atv04.css';
 
 function Atv04() {
   return (
     <div className="container">
       <h2>Atividade 04</h2>
-      <Toolbar
-        onPlayMovie={() => alert('Playing movie!')}
-        onUploadImage={() => alert('Uploading image!')}
+      <BarraDeFerramentas
+        aoReproduzirFilme={() => alert('Reproduzindo filme!')}
+        aoEnviarImagem={() => alert('Enviando imagem!')}
       />
       <Gallery />
       <Counter />
@@ -28,11 +29,12 @@ function Atv04() {
       <Form2 />
       <Form3 />
       <List2 />
-      <ShapeEditor />
-      <CounterList />
       <List3 />
       <List4 />
+      <ShapeEditor />
+      <CounterList />
       <BucketList />
+      <MovingDot />
       <Link to="/">Voltar</Link>
     </div>
   );
